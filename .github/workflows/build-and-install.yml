@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
         with:
           submodules: recursive
       - run: |
@@ -103,7 +103,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
         with:
           submodules: recursive
       - name: install-required-packages.sh on ${{ matrix.distro }}
@@ -190,7 +190,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
         with:
           submodules: recursive
       - name: install-required-packages.sh on ${{ matrix.distro }}
